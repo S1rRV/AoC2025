@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 def input_file(file):
-    """Read a file one line at a time and process each line."""
     print(" - The dial is starts by pointing at 50")
     try:
         with open(file, 'r') as f:
@@ -17,8 +16,6 @@ def input_file(file):
 
                 remainder = value % 100
                 position += (direction * remainder)
-                
-
                 
                 while position >= 100:
                     position -= 100

@@ -33,9 +33,7 @@ def input_file(file):
                 
                 print(f" - The dial is rotated {line} by pointing at {position}") 
         return count
-    
-        
-                    
+       
     except FileNotFoundError:
         print(f"Error: File '{file}' not found.")
     except Exception as e:
